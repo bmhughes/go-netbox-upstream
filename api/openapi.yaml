@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: NetBox REST API
-  version: 3.6.3 (3.6)
+  version: 3.6.4 (3.6)
   license:
     name: Apache v2 License
 paths:
@@ -7634,6 +7634,11 @@ paths:
             type: string
         explode: true
         style: form
+      - in: query
+        name: unterminated
+        schema:
+          type: boolean
+        description: Unterminated
       - in: query
         name: updated_by_request
         schema:

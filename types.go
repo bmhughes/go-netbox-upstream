@@ -32128,16 +32128,19 @@ type DcimCablesListParams struct {
 	TenantId *[]int `form:"tenant_id,omitempty" json:"tenant_id,omitempty"`
 
 	// TenantIdN Tenant (ID)
-	TenantIdN         *[]int              `form:"tenant_id__n,omitempty" json:"tenant_id__n,omitempty"`
-	TerminationAId    *[]int32            `form:"termination_a_id,omitempty" json:"termination_a_id,omitempty"`
-	TerminationAType  *string             `form:"termination_a_type,omitempty" json:"termination_a_type,omitempty"`
-	TerminationATypeN *string             `form:"termination_a_type__n,omitempty" json:"termination_a_type__n,omitempty"`
-	TerminationBId    *[]int32            `form:"termination_b_id,omitempty" json:"termination_b_id,omitempty"`
-	TerminationBType  *string             `form:"termination_b_type,omitempty" json:"termination_b_type,omitempty"`
-	TerminationBTypeN *string             `form:"termination_b_type__n,omitempty" json:"termination_b_type__n,omitempty"`
-	Type              *[]string           `form:"type,omitempty" json:"type,omitempty"`
-	TypeN             *[]string           `form:"type__n,omitempty" json:"type__n,omitempty"`
-	UpdatedByRequest  *openapi_types.UUID `form:"updated_by_request,omitempty" json:"updated_by_request,omitempty"`
+	TenantIdN         *[]int    `form:"tenant_id__n,omitempty" json:"tenant_id__n,omitempty"`
+	TerminationAId    *[]int32  `form:"termination_a_id,omitempty" json:"termination_a_id,omitempty"`
+	TerminationAType  *string   `form:"termination_a_type,omitempty" json:"termination_a_type,omitempty"`
+	TerminationATypeN *string   `form:"termination_a_type__n,omitempty" json:"termination_a_type__n,omitempty"`
+	TerminationBId    *[]int32  `form:"termination_b_id,omitempty" json:"termination_b_id,omitempty"`
+	TerminationBType  *string   `form:"termination_b_type,omitempty" json:"termination_b_type,omitempty"`
+	TerminationBTypeN *string   `form:"termination_b_type__n,omitempty" json:"termination_b_type__n,omitempty"`
+	Type              *[]string `form:"type,omitempty" json:"type,omitempty"`
+	TypeN             *[]string `form:"type__n,omitempty" json:"type__n,omitempty"`
+
+	// Unterminated Unterminated
+	Unterminated     *bool               `form:"unterminated,omitempty" json:"unterminated,omitempty"`
+	UpdatedByRequest *openapi_types.UUID `form:"updated_by_request,omitempty" json:"updated_by_request,omitempty"`
 }
 
 // DcimCablesBulkPartialUpdateJSONBody defines parameters for DcimCablesBulkPartialUpdate.
