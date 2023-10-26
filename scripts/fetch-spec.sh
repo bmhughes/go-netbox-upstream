@@ -18,6 +18,7 @@ git clone https://github.com/netbox-community/netbox-docker.git \
 
 mv "${REPO_DIR}/docker-compose.override.yml.example" "${REPO_DIR}/docker-compose.override.yml"
 
+sed -i 's/start_period: 60s/start_period: 120s/g' "${REPO_DIR}/docker-compose.yml"
 export VERSION="v${NETBOX_VERSION}"
 docker compose --project-directory="${REPO_DIR}" up --detach --quiet-pull
 
